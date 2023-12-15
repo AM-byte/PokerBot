@@ -170,14 +170,14 @@ def to_string(expectedValue, inputMap):
     # Print the expected value for the players
     print(f"Expected value for Hero: {expectedValue}")
 
-    print("\Optimal policy for Hero\n")
+    print("Optimal policy for Hero\n")
     # Iterate over items where the key length is even
     for _, value in filter(lambda x: len(x[0]) % 2 == 0, sortedList):
         print(value)
 
     print(f"\n\nExpected value for Villan: {-1*expectedValue}")
 
-    print("\Optimal policy for Villan\n")
+    print("Optimal policy for Villan\n")
     # Iterate over items where the key length is odd
     for _, value in filter(lambda x: len(x[0]) % 2 == 1, sortedList):
         print(value)
